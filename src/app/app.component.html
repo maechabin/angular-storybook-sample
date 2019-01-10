@@ -8,4 +8,9 @@
   />
 
   <app-input (sendValue)="handleSendValue($event)"></app-input>
+  <app-child
+    [name]="name"
+    [hasError]="hasError"
+    (sendClick)="handleSendClick()"
+  ></app-child>
 </div>

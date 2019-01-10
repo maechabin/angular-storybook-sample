@@ -15,5 +15,10 @@ export class AppComponent {
     this.inputName = event.value;
     this.hasError = event.hasError;
   }
+
+  handleSendClick() {
+    if (this.hasError === false) {
+      this.name = this.inputName;
+    }
   }
 }
