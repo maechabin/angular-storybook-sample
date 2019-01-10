@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'angular-storybook-sample';
   name = 'Angular';
   inputName = '';
-  hasError = false;
+  hasError = true;
 
   handleSendValue(event: { value: string; hasError: boolean }) {
     this.inputName = event.value;
