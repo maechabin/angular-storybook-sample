@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "storybook-app": "start-storybook -p 6007 -c .storybook-app",
-    "storybook": "start-storybook -p 6006 -c .storybook",
+    "storybook-app": "start-storybook -p 6007 -c .storybook/app",
+    "storybook": "start-storybook -p 6006 -c .storybook/demo",
     "build-storybook": "build-storybook"
   },
   "private": true,
