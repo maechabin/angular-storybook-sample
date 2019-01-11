@@ -1,5 +1,6 @@
 import { configure } from "@storybook/angular";
 import { withNotes } from "@storybook/addon-notes";
+import "./style.css";
 
 // automatically import all files ending in *.stories.ts
 const req = require.context("../../src/app", true, /.stories.ts$/);
