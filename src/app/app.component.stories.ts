@@ -9,7 +9,7 @@ import { HelloComponent } from './hello/hello.component';
 import { InputComponent } from './input/input.component';
 import { ButtonComponent } from './button/button.component';
 
-storiesOf('AppComponent', module).add('to Storybook', () => ({
+storiesOf('AppComponent', module).add('コンポーネン全体像', () => ({
   component: AppComponent,
   props: {},
   moduleMetadata: {
@@ -17,11 +17,3 @@ storiesOf('AppComponent', module).add('to Storybook', () => ({
     declarations: [HelloComponent, InputComponent, ButtonComponent],
   },
 }));
-
-// storiesOf('Child', module).add('to Storybook', () => ({
-//   component: ChildComponent,
-//   props: {
-//     name: 'Storybook',
-//     sendValue: action('Clicked!'),
-//   },
-// }));

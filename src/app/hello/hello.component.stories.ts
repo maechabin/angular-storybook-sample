@@ -60,13 +60,11 @@ storiesOf('AppComponent/HelloComponentガイド', module)
     component: HelloComponent,
     props: {
       name: 'aaa',
-      sendClick: action('Clicked!'),
     },
   }))
   .add('@Input nameに"bbb"を渡した場合', () => ({
     component: HelloComponent,
     props: {
       name: 'bbb',
-      sendClick: action('Clicked!'),
     },
   }));
