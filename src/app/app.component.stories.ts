@@ -5,15 +5,16 @@ import { linkTo } from '@storybook/addon-links';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ChildComponent } from './child/child.component';
+import { HelloComponent } from './hello/hello.component';
 import { InputComponent } from './input/input.component';
+import { ButtonComponent } from './button/button.component';
 
 storiesOf('AppComponent', module).add('to Storybook', () => ({
   component: AppComponent,
   props: {},
   moduleMetadata: {
     imports: [ReactiveFormsModule],
-    declarations: [ChildComponent, InputComponent],
+    declarations: [HelloComponent, InputComponent, ButtonComponent],
   },
 }));
 

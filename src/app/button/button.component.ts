@@ -1,16 +1,12 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-child',
+  selector: 'app-button',
   template: `
-    <div>
-      <h2>Hello {{ name }}!</h2>
-      <button (click)="handleClick()" [disabled]="hasError">Click</button>
-    </div>
+    <button (click)="handleClick()" [disabled]="hasError">Click</button>
   `,
 })
-export class ChildComponent {
-  @Input() name: string;
+export class ButtonComponent {
   @Input() hasError: boolean;
   @Output() sendClick: EventEmitter<null> = new EventEmitter<null>();
 
