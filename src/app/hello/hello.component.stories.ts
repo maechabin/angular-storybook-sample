@@ -5,6 +5,7 @@ import { linkTo } from '@storybook/addon-links';
 import { withKnobs, text, number, color, object } from '@storybook/addon-knobs';
 
 import { HelloComponent } from './hello.component';
+import * as md from 'marked';
 
 storiesOf('AppComponent/HelloComponentガイド', module)
 　.addDecorator(withKnobs)
@@ -28,20 +29,32 @@ storiesOf('AppComponent/HelloComponentガイド', module)
     '@Input name',
     withNotes(`
       <div>aaa</div>
-    `)(() => ({
-      component: HelloComponent,
-      moduleMetadata: {
-        declarations: [HelloComponent],
-      },
-      template: `
-        <p>&lt;app-hello name="aaa"&gt;&lt;/app-hello&gt;</p>
-        <app-hello name="aaa" (sendValue)="handleSendValue($event)"></app-hello>
-        <p>&lt;app-hello name="bbb"&gt;&lt;/app-hello&gt;</p>
-        <app-hello name="bbb"></app-hello>
-        <p>&lt;app-hello name="ccc"&gt;&lt;/app-hello&gt;</p>
-        <app-hello name="ccc"></app-hello>
-      `,
-    })),
+    `)(() => {
+      return {
+        component: HelloComponent,
+        moduleMetadata: {
+          declarations: [HelloComponent],
+        },
+        template: `
+          ${md(`
+# HelloComponent
+
+\`\`\`js
+<app-hello name="aaa"></app-hello>
+\`\`\`
+<app-hello name="aaa"></app-hello>
+
+\`\`\`<app-hello name="bbb"></app-hello>\`\`\`
+<app-hello name="bbb"></app-hello>
+
+\`\`\`<app-hello name="ccc"></app-hello>\`\`\`
+<app-hello name="ccc"></app-hello>
+`, {
+  headerPrefix: 'aaaa'
+})}
+        `,
+      };
+    })
   )
   .add('@Input nameに"aaa"を渡した場合', () => ({
     component: HelloComponent,
