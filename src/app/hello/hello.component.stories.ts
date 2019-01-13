@@ -7,8 +7,30 @@ import { withKnobs, text, number, color, object } from '@storybook/addon-knobs';
 import { HelloComponent } from './hello.component';
 import * as md from 'marked';
 
+const markdown = `
+# HelloComponent
+
+~~~
+<app-hello name="aaa"></app-hello>
+~~~
+
+<app-hello name="aaa"></app-hello>
+
+~~~
+<app-hello name="bbb"></app-hello>
+~~~
+
+<app-hello name="bbb"></app-hello>
+
+~~~
+<app-hello name="ccc"></app-hello>
+~~~
+
+<app-hello name="ccc"></app-hello>
+`;
+
 storiesOf('AppComponent/HelloComponentガイド', module)
-　.addDecorator(withKnobs)
+  .addDecorator(withKnobs)
   .add('コンポーネント全体像', () => {
     const name = text('name', 'angular');
 
@@ -18,44 +40,18 @@ storiesOf('AppComponent/HelloComponentガイド', module)
         name,
       },
     };
-  }, {
-    notes: {
-      markdownn: `
-        # aaaaa
-      `,
-    }
   })
-  .add(
-    '@Input name',
-    withNotes(`
-      <div>aaa</div>
-    `)(() => {
-      return {
-        component: HelloComponent,
-        moduleMetadata: {
-          declarations: [HelloComponent],
-        },
-        template: `
-          ${md(`
-# HelloComponent
-
-\`\`\`js
-<app-hello name="aaa"></app-hello>
-\`\`\`
-<app-hello name="aaa"></app-hello>
-
-\`\`\`<app-hello name="bbb"></app-hello>\`\`\`
-<app-hello name="bbb"></app-hello>
-
-\`\`\`<app-hello name="ccc"></app-hello>\`\`\`
-<app-hello name="ccc"></app-hello>
-`, {
-  headerPrefix: 'aaaa'
-})}
-        `,
-      };
-    })
-  )
+  .add('コンポーネントガイド', () => {
+    return {
+      component: HelloComponent,
+      moduleMetadata: {
+        declarations: [HelloComponent],
+      },
+      template: `
+        ${md(markdown)}
+      `,
+    };
+  })
   .add('@Input nameに"aaa"を渡した場合', () => ({
     component: HelloComponent,
     props: {
