@@ -12,6 +12,9 @@
     "storybook": "start-storybook -p 6006 -c .storybook/demo",
     "build-storybook": "build-storybook"
   },
+  "jest": {
+    "verbose": true
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
@@ -40,15 +43,20 @@
     "@storybook/addon-knobs": "^4.1.6",
     "@storybook/addon-links": "^4.1.6",
     "@storybook/addon-notes": "^4.1.6",
+    "@storybook/addon-storyshots": "^4.1.6",
     "@storybook/addons": "^4.1.6",
     "@storybook/angular": "^4.1.6",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
+    "@types/jest": "^23.3.12",
     "@types/node": "~8.9.4",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.5",
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
+    "jest": "^23.6.0",
+    "jest-preset-angular": "^6.0.2",
     "karma": "~1.7.1",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.0",

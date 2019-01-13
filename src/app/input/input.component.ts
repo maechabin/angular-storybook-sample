@@ -25,6 +25,7 @@ export class InputComponent {
   ]);
 
   handleInput() {
+    console.log(this.message);
     if (this.name.invalid) {
       this.message = 'Vlidation Error';
     } else {
