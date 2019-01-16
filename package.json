@@ -13,7 +13,9 @@
     "build-storybook": "build-storybook"
   },
   "jest": {
-    "verbose": true
+    "verbose": true,
+    "preset": "jest-preset-angular",
+    "setupTestFrameworkScriptFile": "./jest-config/setup.ts"
   },
   "private": true,
   "dependencies": {
@@ -52,6 +54,8 @@
     "@types/node": "~8.9.4",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.5",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "babel-preset-env": "^1.7.0",
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
