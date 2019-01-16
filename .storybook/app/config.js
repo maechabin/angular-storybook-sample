@@ -1,7 +1,9 @@
-import { configure } from '@storybook/angular';
+// import { configure } from '@storybook/angular';
+import requireContext from 'require-context.macro';
 
 // automatically import all files ending in *.stories.ts
-const req = require.context('../../src/app', true, /.stories.ts$/);
+//const req = require.context('../../src/app', true, /.stories.ts$/);
+const req = requireContext('../../src/app', true, /.stories.ts$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
   // setTimeout(() => {
