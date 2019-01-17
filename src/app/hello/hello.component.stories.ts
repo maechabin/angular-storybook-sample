@@ -5,7 +5,7 @@ import { linkTo } from '@storybook/addon-links';
 import { withKnobs, text, number, color, object } from '@storybook/addon-knobs';
 
 import { HelloComponent } from './hello.component';
-// import * as md from 'marked';
+import * as md from 'marked';
 
 const markdown = `
 # HelloComponent
@@ -47,9 +47,9 @@ storiesOf('AppComponent/HelloComponentガイド', module)
       moduleMetadata: {
         declarations: [HelloComponent],
       },
-      // template: `
-      //   ${md(markdown)}
-      // `,
+      template: `
+        ${md.parse(markdown)}
+      `,
     };
   })
   .add('@Input nameに"aaa"を渡した場合', () => ({
