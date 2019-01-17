@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots AppComponent/ButtonComponent hasErrorにfalseを渡した場合 1`] = `
+<storybook-dynamic-app-root
+  cfr={[Function CodegenComponentFactoryResolver]}
+  data={[Function Object]}
+  target={[Function ViewContainerRef_]}
+>
+  <app-button>
+    <button>
+      Click
+    </button>
+  </app-button>
+</storybook-dynamic-app-root>
+`;
+
+exports[`Storyshots AppComponent/ButtonComponent hasErrorにtrueを渡した場合 1`] = `
+<storybook-dynamic-app-root
+  cfr={[Function CodegenComponentFactoryResolver]}
+  data={[Function Object]}
+  target={[Function ViewContainerRef_]}
+>
+  <app-button>
+    <button
+      disabled=""
+    >
+      Click
+    </button>
+  </app-button>
+</storybook-dynamic-app-root>
+`;
+
+exports[`Storyshots AppComponent/ButtonComponent コンポーネント全体像 1`] = `
+<storybook-dynamic-app-root
+  cfr={[Function CodegenComponentFactoryResolver]}
+  data={[Function Object]}
+  target={[Function ViewContainerRef_]}
+>
+  <app-button>
+    <button>
+      Click
+    </button>
+  </app-button>
+</storybook-dynamic-app-root>
+`;
+
+exports[`Storyshots AppComponent/HelloComponentガイド @Input nameに"aaa"を渡した場合 1`] = `
+<storybook-dynamic-app-root
+  cfr={[Function CodegenComponentFactoryResolver]}
+  data={[Function Object]}
+  target={[Function ViewContainerRef_]}
+>
+  <app-hello>
+    <h2>
+      Hello aaa!
+    </h2>
+  </app-hello>
+</storybook-dynamic-app-root>
+`;
+
+exports[`Storyshots AppComponent/HelloComponentガイド @Input nameに"bbb"を渡した場合 1`] = `
+<storybook-dynamic-app-root
+  cfr={[Function CodegenComponentFactoryResolver]}
+  data={[Function Object]}
+  target={[Function ViewContainerRef_]}
+>
+  <app-hello>
+    <h2>
+      Hello bbb!
+    </h2>
+  </app-hello>
+</storybook-dynamic-app-root>
+`;
+
+exports[`Storyshots AppComponent/HelloComponentガイド コンポーネントガイド 1`] = `
+<storybook-dynamic-app-root
+  cfr={[Function CodegenComponentFactoryResolver]}
+  data={[Function Object]}
+  target={[Function ViewContainerRef_]}
+>
+  <app-hello>
+    <h2>
+      Hello !
+    </h2>
+  </app-hello>
+</storybook-dynamic-app-root>
+`;
+
+exports[`Storyshots AppComponent/HelloComponentガイド コンポーネント全体像 1`] = `
+<storybook-dynamic-app-root
+  cfr={[Function CodegenComponentFactoryResolver]}
+  data={[Function Object]}
+  target={[Function ViewContainerRef_]}
+>
+  <app-hello>
+    <h2>
+      Hello angular!
+    </h2>
+  </app-hello>
+</storybook-dynamic-app-root>
+`;
+
+exports[`Storyshots AppComponent/InputComponentガイド コンポーネントガイド 1`] = `
+<storybook-dynamic-app-root
+  cfr={[Function CodegenComponentFactoryResolver]}
+  data={[Function Object]}
+  target={[Function ViewContainerRef_]}
+>
+  <app-input>
+    <div>
+      <input
+        class="ng-untouched ng-pristine ng-invalid"
+        ng-reflect-form="[object Object]"
+        type="text"
+      />
+      <br />
+      <span
+        style="color: red;"
+      >
+        aaa
+      </span>
+    </div>
+  </app-input>
+</storybook-dynamic-app-root>
+`;
+
+exports[`Storyshots AppComponent/InputComponentガイド コンポーネント全体像 1`] = `
+<storybook-dynamic-app-root
+  cfr={[Function CodegenComponentFactoryResolver]}
+  data={[Function Object]}
+  target={[Function ViewContainerRef_]}
+>
+  <app-input>
+    <div>
+      <input
+        class="ng-untouched ng-pristine ng-invalid"
+        ng-reflect-form="[object Object]"
+        type="text"
+      />
+      <br />
+      <span
+        style="color: red;"
+      >
+        
+      </span>
+    </div>
+  </app-input>
+</storybook-dynamic-app-root>
+`;
