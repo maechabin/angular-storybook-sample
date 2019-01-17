@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+interface Event { value: string; hasError: boolean; }
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +13,7 @@ export class AppComponent {
   inputName = '';
   hasError = true;
 
-  handleSendValue(event: { value: string; hasError: boolean }) {
+  handleSendValue(event: Event) {
     this.inputName = event.value;
     this.hasError = event.hasError;
   }

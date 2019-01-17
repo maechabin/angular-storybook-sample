@@ -13,7 +13,7 @@ import {
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { InputComponent } from './input.component';
-import * as md from 'marked';
+// import * as md from 'marked';
 
 const note = `
   ## Input Element
@@ -66,10 +66,10 @@ storiesOf('AppComponent/InputComponentガイド', module)
         sendValue,
         message: 'aaa',
       },
-      template: `
-        ${md(`
-<app-input></app-input>
-        `)}
-      `,
+//       template: `
+//         ${md(`
+// <app-input></app-input>
+//         `)}
+//       `,
     };
   });
