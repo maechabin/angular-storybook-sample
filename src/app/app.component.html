@@ -8,6 +8,9 @@
   />
 
   <app-input (sendValue)="handleSendValue($event)"></app-input>
-  <app-button [hasError]="hasError" (sendClick)="handleSendClick()"></app-button>
+  <app-button
+    [hasError]="hasError"
+    (sendClick)="handleSendClick()"
+  ></app-button>
   <app-hello [name]="name"></app-hello>
 </div>

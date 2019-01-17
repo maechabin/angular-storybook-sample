@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 
-interface Event { value: string; hasError: boolean; }
+interface Event {
+  value: string;
+  hasError: boolean;
+}
 
 @Component({
   selector: 'app-root',

@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots AppComponent コンポーネン全体像 1`] = `
+<storybook-dynamic-app-root
+  cfr={[Function CodegenComponentFactoryResolver]}
+  data={[Function Object]}
+  target={[Function ViewContainerRef_]}
+>
+  <ng-component>
+    <app-root />
+  </ng-component>
+</storybook-dynamic-app-root>
+`;
+
 exports[`Storyshots AppComponent/ButtonComponent hasErrorにfalseを渡した場合 1`] = `
 <storybook-dynamic-app-root
   cfr={[Function CodegenComponentFactoryResolver]}
@@ -78,11 +90,58 @@ exports[`Storyshots AppComponent/HelloComponentガイド コンポーネント�
   data={[Function Object]}
   target={[Function ViewContainerRef_]}
 >
-  <app-hello>
-    <h2>
-      Hello !
-    </h2>
-  </app-hello>
+  <ng-component>
+    <h1
+      id="hellocomponent"
+    >
+      HelloComponent
+    </h1>
+    <pre>
+      <code>
+        &lt;app-hello name="aaa"&gt;&lt;/app-hello&gt;
+      </code>
+    </pre>
+    <p>
+      <app-hello
+        name="aaa"
+        ng-reflect-name="aaa"
+      >
+        <h2>
+          Hello aaa!
+        </h2>
+      </app-hello>
+    </p>
+    <pre>
+      <code>
+        &lt;app-hello name="bbb"&gt;&lt;/app-hello&gt;
+      </code>
+    </pre>
+    <p>
+      <app-hello
+        name="bbb"
+        ng-reflect-name="bbb"
+      >
+        <h2>
+          Hello bbb!
+        </h2>
+      </app-hello>
+    </p>
+    <pre>
+      <code>
+        &lt;app-hello name="ccc"&gt;&lt;/app-hello&gt;
+      </code>
+    </pre>
+    <p>
+      <app-hello
+        name="ccc"
+        ng-reflect-name="ccc"
+      >
+        <h2>
+          Hello ccc!
+        </h2>
+      </app-hello>
+    </p>
+  </ng-component>
 </storybook-dynamic-app-root>
 `;
 
@@ -106,21 +165,25 @@ exports[`Storyshots AppComponent/InputComponentガイド コンポーネント�
   data={[Function Object]}
   target={[Function ViewContainerRef_]}
 >
-  <app-input>
-    <div>
-      <input
-        class="ng-untouched ng-pristine ng-invalid"
-        ng-reflect-form="[object Object]"
-        type="text"
-      />
-      <br />
-      <span
-        style="color: red;"
-      >
-        aaa
-      </span>
-    </div>
-  </app-input>
+  <ng-component>
+    <p>
+      <app-input>
+        <div>
+          <input
+            class="ng-untouched ng-pristine ng-invalid"
+            ng-reflect-form="[object Object]"
+            type="text"
+          />
+          <br />
+          <span
+            style="color: red;"
+          >
+            
+          </span>
+        </div>
+      </app-input>
+    </p>
+  </ng-component>
 </storybook-dynamic-app-root>
 `;
 

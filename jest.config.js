@@ -1,10 +1,10 @@
 module.exports = {
   globals: {
     __TRANSFORM_HTML__: true,
-    // 'ts-jest': {
-    //   tsConfig: '<rootDir>/src/tsconfig.spec.json',
-    //   stringifyContentPathRegex: '\\.html$',
-    // },
+    'ts-jest': {
+      tsConfig: '<rootDir>/src/tsconfig.spec.json',
+      stringifyContentPathRegex: '\\.html$',
+    },
   },
   transform: {
     '^.+\\.(ts|js|html)$': 'babel-jest',
@@ -23,7 +23,7 @@ module.exports = {
     '^assets/(.*)$': '<rootDir>/src/assets/$1',
     '^environments/(.*)$': '<rootDir>/src/environments/$1',
   },
-  // transformIgnorePatterns: ['node_modules/(?!@ngrx)'],
+  transformIgnorePatterns: ['node_modules/(?!@ngrx)'],
   snapshotSerializers: [
     'jest-preset-angular/AngularSnapshotSerializer.js',
     'jest-preset-angular/HTMLCommentSerializer.js',

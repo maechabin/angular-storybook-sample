@@ -11,9 +11,14 @@ import { ButtonComponent } from './button/button.component';
 
 storiesOf('AppComponent', module).add('コンポーネン全体像', () => ({
   component: AppComponent,
-  props: {},
   moduleMetadata: {
     imports: [ReactiveFormsModule],
-    declarations: [HelloComponent, InputComponent, ButtonComponent],
+    declarations: [
+      AppComponent,
+      HelloComponent,
+      InputComponent,
+      ButtonComponent,
+    ],
+    template: '<app-root></app-root>',
   },
 }));
