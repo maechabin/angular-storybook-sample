@@ -1,5 +1,6 @@
-import { configure } from "@storybook/angular";
+import { configure, addDecorator } from "@storybook/angular";
 // import requireContext from 'require-context.macro';
+import { withNotes } from "@storybook/addon-notes";
 
 // automatically import all files ending in *.stories.ts
 const req = require.context("../../src/app", true, /.stories.ts$/);
@@ -13,4 +14,5 @@ function loadStories() {
   // }, 1000);
 }
 
+addDecorator(withNotes);
 configure(loadStories, module);

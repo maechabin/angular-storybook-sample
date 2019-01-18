@@ -29,6 +29,8 @@ const markdown = `
 <app-hello name="ccc"></app-hello>
 `;
 
+const readme = require('./README.md');
+
 storiesOf('AppComponent/HelloComponentガイド', module)
   .addDecorator(withKnobs)
   .add('コンポーネント全体像', () => {
@@ -40,6 +42,8 @@ storiesOf('AppComponent/HelloComponentガイド', module)
         name,
       },
     };
+  }, {
+    notes: { markdown: readme },
   })
   .add('コンポーネントガイド', () => {
     return {
