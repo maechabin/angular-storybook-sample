@@ -33,18 +33,22 @@ const readme = require('./README.md');
 
 storiesOf('AppComponent/HelloComponentガイド', module)
   .addDecorator(withKnobs)
-  .add('コンポーネント全体像', () => {
-    const name = text('name', 'angular');
+  .add(
+    'コンポーネント全体像',
+    () => {
+      const name = text('name', 'angular');
 
-    return {
-      component: HelloComponent,
-      props: {
-        name,
-      },
-    };
-  }, {
-    notes: { markdown: readme },
-  })
+      return {
+        component: HelloComponent,
+        props: {
+          name,
+        },
+      };
+    },
+    {
+      notes: { markdown: readme },
+    },
+  )
   .add('コンポーネントガイド', () => {
     return {
       component: HelloComponent,
